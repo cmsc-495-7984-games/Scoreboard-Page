@@ -73,6 +73,7 @@ h1 {
       <th>Score</th>
       <th>Username</th>
     </tr>
+<!--   PHP loop to create table display   -->
     <?php
     for ($i = 0; $i <= 10; $i++) {
       echo "
@@ -85,7 +86,5 @@ h1 {
     }
     ?>
   </table>
-  <!-- I'm not sure how I can populate that scoreboard here -->
-  <p><?php echo $scoreboard ?></p>
 </body>
 </html>
