@@ -10,7 +10,7 @@ $scoreboard_user = array();
 $scoreboard_score = array();
 
 // get top 10 users in database, by score
-$scoreboard = mysqli_query("SELECT username,
+$scoreboard_user = mysqli_query("SELECT username,
 FROM MIBGa_DB
 ORDER BY score DESC
 LIMIT 10");
