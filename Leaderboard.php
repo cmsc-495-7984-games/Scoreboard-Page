@@ -1,4 +1,4 @@
-<?php include('Score_Request.php') ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,13 +15,13 @@
     </tr>
 <!--   PHP loop to create table display   -->
     <?php
-    session_start();
-    for ($i = 0; $i <= 10; $i++) {
+    include('Score_Request.php');
+    for ($i = 0; $i <= 9; $i++) {
       echo "
       <tr>
-        <td>" . $i . "</td>
-        <td>" . $_SESSION['user'][$i] . "</td>
-        <td>" . $_SESSION['score'][$i] . "</td>
+        <td>" . ($i + 1) . "</td>
+        <td>" . $scoreboard_user[$i] . "</td>
+        <td>" . $scoreboard_score[$i] . "</td>
       </tr>";
     }
     ?>
