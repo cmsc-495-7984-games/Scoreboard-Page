@@ -13,6 +13,10 @@ background-size: cover;
 -webkit-filter: blur(0px);
 }
 
+div.centered {
+  text-align: center;
+}
+
 .header{
 position: absolute;
 top: calc(50% - 35px);

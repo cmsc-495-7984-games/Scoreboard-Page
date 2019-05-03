@@ -26,5 +26,15 @@
     }
     ?>
   </table>
+  <!-- Buttons to return to game or exit session  -->
+  <div class="centered">
+    <form action="MIBGa_Game.html">
+      <button>Retry</button>
+    </form>
+    <form action="login.php">
+      <button>Logout</button>
+    </form>
+  </div>
+
 </body>
 </html>
